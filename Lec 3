@@ -1,0 +1,7 @@
+Primary key
+auto increment key
+unique key 
+primary key vs unique key
+
+Primary key : uniquely identify each record in table. it doesn't allow duplicate and null value.
+
