@@ -55,6 +55,63 @@ update employee set location='Pune';
 update employee set location ='Nashik' where firstname='anu' and lastname='mundhe';
 
 
+*DELETE
+
+delete from employee where id=3;
+delete from employee;
+select * from employee;
+
+*ALTER
+-Alter commands are mainly used to do the structural changes, like the size of varchar.
+and UPDATE is used to update users data actually.
+i.e.
+ALTER is for Structure manipulation.
+UPDATE is for Data manipulation.
+
+
+alter table employee add column jobtitle varchar(50);
+- to add any new column in table
+
+alter table employee drop column jobtitle;
+alter table employee modify column firstname varchar(30);
+- this will change the size of column 
+
+alter table employee drop primary key;
+- this will remove the primary key
+
+alter table employee add primary key(id);
+desc employee;
+- this will add the primary key to an existing column
+
+
+*DDL vs DML
+
+Data Definition Language- deals with table structure
+Create, Alter, Drop, Truncate are DDL commands
+
+Data Manipulation Language- here we deal with the data directly.
+insert, update, delete are DML commands
+
+*TRUNCATE
+truncate table employee;
+- this will remove the all records from table
+- then you say DELETE also does the same thing but wait, truncate internally drops the table and recreates it. if you have billions of lines of data then you will use truncate 
+  bcz it is fast, DELETE will take time to do that. 
+- TRUNCATE is DDL command.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
