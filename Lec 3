@@ -1,7 +1,7 @@
-Primary key
-auto increment key
-unique key 
-primary key vs unique key
+1. Primary key
+2. auto-increment key
+3. unique key 
+4. primary key vs unique key
 
 *Primary key : uniquely identify each record in table. it doesn't allow duplicate and null value.
 
