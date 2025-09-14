@@ -26,6 +26,19 @@ query2
 query3
 
 
+I want to find premium customers who places more orders than the average number of orders
+==========
+
+select * from (select order_customer_id, count(*) as total_orders_per_customer from orders group by order_customer_id) total_orders join(select avg(total_orders_per_customer) as avg_orders_per_customer from (select order_customer_id, count(*) as total_orders_per_customer from orders group by order_customer_id) x) average_orders on total_orders.total_orders_per_customer > average_orders.avg_orders_per_customer
+
+
+3 step process
+===============
+1. calculate total orders per customer
+2. calculate average number of number orders for the customers
+3. get to know the customers who are premium
+
+WITH total_orders(order_customer_id, total_orders_per_customer) as (select order_customer_id, count(*) as total_orders_per_customer from orders group by order_customer_id), average_orders(avg_orders_per_customer) as (select avg(total_orders_per_customer) as avg_orders_per_customer from total_orders) select * from orders;
 
 
 
