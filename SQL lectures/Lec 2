@@ -1,0 +1,70 @@
+# CRUD operations
+Create- insert statements
+Read- select statements
+Update- update statements
+Delete- delete statements
+
+# Creation of table and insert statements
+
+* to create a table
+CREATE TABLE employee (firstname VARCHAR(20), middlename VARCHAR(20), lastname VARCHAR(20), age INT, salary INT, location VARCHAR(20));
+
+ *to insert any value in tabel
+INSERT INTO employee VALUES('aniket','vitthal', 'andhale', 21, 50000, 'Nashik'); 
+
+* to insert value on those location where we want. like, here we have not given value to middlename
+INSERT INTO employee (firstname, lastname, age, salary, location) VALUES('vitthal','andhale', 40, 60000, 'Nashik'); 
+
+*to show table
+SELECT * FROM employee;
+
+*to insert quote in value
+INSERT INTO employee VALUES('mukta','vitthal', "andhal'e", 24, 40000, 'Nashik');
+
+*to insert multiple values
+INSERT INTO employee VALUES('anu','vitthal', 'andhale', 24, 60000, 'Nashik'),('sandy','vitthal', 'andhale', 24, 40000,'Nashik');
+
+*to delete table
+drop table employee;
+
+*to create table with not null values
+CREATE TABLE employee (firstname VARCHAR(20) not null, middlename VARCHAR(20), lastname VARCHAR(20) not null, age INT not null, salary INT not null, location VARCHAR(20) not null);
+
+*to show the structure of table
+desc employee;
+
+*to do comment
+-- default values
+
+*to write a value with dafault value
+CREATE TABLE employee (firstname VARCHAR(20) not null, middlename VARCHAR(20), lastname VARCHAR(20) not null, 
+                       age INT not null, salary INT not null, location VARCHAR(20) not null default 'Nashik');
+
+- like in below query we haev not inserted the value for location so it will table default value which we alredy set while creating the table
+INSERT INTO employee (firstname, lastname, age, salary) VALUES('bharti', 'andhale', 24, 40000);
+
+- but we can also set value thought we have set value dafault then also if we explecitly give what value we wnat to show and where, like below query, firstly we told for location i want to set value as pune though we alredy set location value by default as Nashik
+INSERT INTO employee (firstname, lastname, age, salary, location) VALUES('bharti', 'andhale', 24, 40000, 'Pune');	
+
+*combination of not null and default
+ - we can also set value as null if we mention it null in values
+INSERT INTO employee (firstname, lastname, age, salary, location) VALUES('candy', 'andhale', 24, 40000, null);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

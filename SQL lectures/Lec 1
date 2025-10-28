@@ -1,0 +1,61 @@
+SQL: Structured query language and is used to query a relational DB
+
+After installing type this command to login 
+mysql -u root -p
+
+what is a database: a collection of data and holds this data in the form of tables.
+what is a table: holds the data in form of rows and columns. It is similar to excel spreadsheet.
+The database provides us the capability to access and manipulate this data.
+
+Types of databases
+1. Relational Database rows & columns and also the tables have relation between them.
+•	MySQL
+•	SQL server
+•	Postgre SQL
+•	MariaDB
+
+2. NoSQL Database Key value, Document, Graph
+•	Hbase
+•	MongoDB
+•	Cassandra
+
+To know our databases
+show databases;
+
+to create databases
+create database Course;
+
+to delete DB
+drop database Course;
+
+to go into any DB
+use Course;
+
+to get know in which DB i am
+select database();
+
+to create a table
+create table employee
+(name varchar(50),
+age int,
+salary int
+);
+To see tables in DB
+show tables;
+
+to see structure of table
+describe employee;
+desc employee;
+
+to delete any table
+drop table employee;
+
+
+this will create a table without writing already that use this or that DB
+create table course.employee
+(name varchar(50),
+age int,
+salary int
+);
+
+
