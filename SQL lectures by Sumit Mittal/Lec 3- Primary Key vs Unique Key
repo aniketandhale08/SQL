@@ -1,0 +1,87 @@
+1. Primary key
+2. auto-increment key
+3. unique key 
+4. primary key vs unique key
+
+*Primary key : uniquely identify each record in table. it doesn't allow duplicate and null value.
+
+CREATE TABLE new_employee (id int primary key, firstname VARCHAR(20) not null, middlename VARCHAR(20), lastname VARCHAR(20) not null, 
+                       age INT not null, salary INT not null, location VARCHAR(20) not null default 'Nashik');
+
+-in above table we mentioned the id as primary key
+-you  can also write this same as below query the output will be same, this works the same way.
+
+CREATE TABLE new_employee (id int, firstname VARCHAR(20) not null, middlename VARCHAR(20), lastname VARCHAR(20) not null, 
+                       age INT not null, salary INT not null, location VARCHAR(20) not null default 'Nashik', primary key(id));
+
+- you can also have composite primary key like primary key(id, name)
+- here with column id, the name column is also a primary key, we can say that the combination of these two will not be duplicated.
+
+
+*auto_incriment: we do not have to worry abt the primary key , or can say it is okay of we not write the primary kry and its attribute , this auto_incriment feature will take that as it is.
+
+CREATE TABLE new_employee (id int auto_increment, firstname VARCHAR(20) not null, middlename VARCHAR(20), lastname VARCHAR(20) not null, 
+                       age INT not null, salary INT not null, location VARCHAR(20) not null default 'Nashik', primary key(id));
+
+- in the above table the id column is the primary key and put it as auto_incriment and in the values section we have not written the value for the same so it will take primary key automatically 
+  and it will start starts from 1.
+
+
+*Unique Key:
+
+- you can have only one primary key and the primary key cannot hold any NULL
+- we should use primary key when we have to uniquely identify each record.
+- unique key can hold NULL
+- for example in MySQL a unique key can hold any number of NULL values
+- in some of the other famous DB's unique key hold only one NULL
+- so the purpose of unique key is to make sure the values do not duplicate
+- we can have only one primary key but multiple unique in a table.
+
+-for example, for composite primary key
+-we have created a table name as employee1 and the firstname and lastname means combination of this is the primary key of our table.
+
+CREATE TABLE employee1 ( firstname varchar(20) NOT NULL, lastname varchar(20) NOT NULL, age int NOT NULL, primary key (firstname, lastname));
+
+INSERT INTO employee1 VALUES('mandy', 'andhale', 24);
+
+- we also inserted one record in the employee1 but noew if we try to insert record as same then it will through an error as below.
+14:25:01	INSERT INTO employee1 VALUES('mandy', 'andhale', 24)	Error Code: 1062. Duplicate entry 'mandy-andhale' for key 'employee1.PRIMARY'	0.000 sec
+
+- means it is concatenating the name firstname and lastnaem and making it as the unique key, and if we try to insert the same record which has firstname name and lastname same 
+  then it will through an error but we can insert the anyone entity different and that will be accepted like fistname is same but lastname is different, you can go with that.
+for example like this,   INSERT INTO employee1 VALUES('candy', 'andhale', 24);
+
+-and one more thing, the primary key do not have null like we cannot run this query, INSERT INTO employee1 VALUES('candy', NULL , 24);
+- So, this is how composite primary key works.
+
+- for unique key, have created the table as employee2 and mentioned the id as the unique key, here we cannot insert the same query or record 
+  but we can insert the null value in a position of the unique key but this is possible only in MYSQL not in other DBs
+- this is possible only bcz id is an unique key, if it will be primary key then it will be not possible. 
+- one more thing we can also make composite unique.
+
+CREATE TABLE employee2 ( id int unique key, firstname varchar(20) , lastname varchar(20), age int NOT NULL);
+INSERT INTO employee2 VALUES(1 ,'sam', 'mundhe', 24);
+INSERT INTO employee2 VALUES(1 ,'sam', 'mundhe', 24);  -- it will through an error
+INSERT INTO employee2 VALUES(NULL, 'sam', 'mundhe', 24);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

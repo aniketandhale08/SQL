@@ -1,0 +1,34 @@
+JOINs
+https://www.youtube.com/playlist?list=PLavw5C92dz9FD9XspliRM_HZM_jK7tkii
+
+GROUP BY + HAVING
+https://www.youtube.com/playlist?list=PLtgiThe4j67ohOAzRW_mi-AsLFmj35gxH
+
+Advanced Aggregations – SUM, MIN, MAX, COUNT DISTINCT
+https://www.youtube.com/playlist?list=PLtgiThe4j67ohOAzRW_mi-AsLFmj35gxH
+
+Window Functions – ROW_NUMBER, RANK, DENSE_RANK, LEAD, LAG
+https://www.youtube.com/playlist?list=PLtgiThe4j67olcB82Fc3TT9q4cwWC3Is5
+
+CTEs
+https://youtu.be/jgKLtkLO5Rc?si=L2CxhyPK5KPJJfg1
+
+UPDATE & DELETE with WHERE
+https://youtu.be/GOlz0a-Iu4M?si=cfW3IspQi90eWeZT
+
+Date & Time functions
+https://youtu.be/yUtWwA82ny4?si=MTlj-G6zj2wsIhNa
+
+Normalization basics (1NF, 2NF, 3NF)
+https://youtu.be/rBPQ5fg_kiY?si=UPUjuBnLbdW3LaN0
+https://youtu.be/suKHq3ZLPmU?si=TkalZaptyoawlGMx
+
+Performance basics – why queries are slow, indexing logic
+https://youtu.be/FNYdBLwZ6cE?si=UT_RxOzP6jTlOORF
+https://youtu.be/MpczBuIk7R8?si=ywERXzScRMVi8HQ6
+
+
+
+
+
+
