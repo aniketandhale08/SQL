@@ -32,7 +32,7 @@ https://youtu.be/MpczBuIk7R8?si=ywERXzScRMVi8HQ6
 
 
 
-git add "Leetcode SQL/Easy/1741. Find Total Time Spent by Each Employee.md"
+git add "Leetcode SQL/Easy/1795. Rearrange Products Table.md"
 
 git commit -m "New Question"
 
