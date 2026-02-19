@@ -32,7 +32,7 @@ https://youtu.be/MpczBuIk7R8?si=ywERXzScRMVi8HQ6
 
 
 
-git add "Leetcode SQL/Easy/1795. Rearrange Products Table.md"
+git add "Leetcode SQL/Easy/1978. Employees Whose Manager Left the Company.md"
 
 git commit -m "New Question"
 
