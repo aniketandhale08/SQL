@@ -32,7 +32,7 @@ https://youtu.be/MpczBuIk7R8?si=ywERXzScRMVi8HQ6
 
 
 
-git add "Leetcode SQL/Easy/577. Employee Bonus.md"
+git add "Leetcode SQL/Medium/585. Investments in 2016"
 git commit -m "New Question"
 git push
 
