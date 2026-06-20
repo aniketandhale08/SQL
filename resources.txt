@@ -32,7 +32,7 @@ https://youtu.be/MpczBuIk7R8?si=ywERXzScRMVi8HQ6
 
 
 
-git add "Leetcode SQL/Easy/607. Sales Person.md"
+git add "Leetcode SQL/Medium/610. Triangle Judgement.md"
 git commit -m "New Question"
 git push
 
