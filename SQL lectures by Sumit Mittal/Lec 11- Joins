@@ -3,7 +3,7 @@
 show databases;
 use newDB1;
 show tables;
-select * from students;
+select * from students; 
 select * from courses;
 select * from courses_new;
 
