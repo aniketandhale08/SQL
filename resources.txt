@@ -4,6 +4,7 @@ https://www.youtube.com/playlist?list=PLavw5C92dz9FD9XspliRM_HZM_jK7tkii
 GROUP BY + HAVING
 https://www.youtube.com/playlist?list=PLtgiThe4j67ohOAzRW_mi-AsLFmj35gxH
 
+
 Advanced Aggregations – SUM, MIN, MAX, COUNT DISTINCT
 https://www.youtube.com/playlist?list=PLtgiThe4j67ohOAzRW_mi-AsLFmj35gxH
 
