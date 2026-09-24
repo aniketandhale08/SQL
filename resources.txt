@@ -4,6 +4,7 @@ https://www.youtube.com/playlist?list=PLavw5C92dz9FD9XspliRM_HZM_jK7tkii
 GROUP BY + HAVING
 https://www.youtube.com/playlist?list=PLtgiThe4j67ohOAzRW_mi-AsLFmj35gxH
 
+
 Advanced Aggregations – SUM, MIN, MAX, COUNT DISTINCT
 https://www.youtube.com/playlist?list=PLtgiThe4j67ohOAzRW_mi-AsLFmj35gxH
 
@@ -31,9 +32,13 @@ https://youtu.be/MpczBuIk7R8?si=ywERXzScRMVi8HQ6
 
 
 
+<<<<<<< HEAD
 
 
 git add "Leetcode SQL/Hard/3570. Find Books with No Available Copies.md"
+=======
+git add "Leetcode SQL/Hard/3554. Find Category Recommendation Pairs.md"
+>>>>>>> 89249336efa20f6708fe5ee12ef7ca931a7a7398
 git commit -m "New Question"
 git push
 
