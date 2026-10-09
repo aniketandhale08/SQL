@@ -32,7 +32,6 @@ https://youtu.be/MpczBuIk7R8?si=ywERXzScRMVi8HQ6
 
 
 
-
 git add "Leetcode SQL/Easy/3793. Find Users with High Token Usage.md"
 git commit -m "New Question"
 git push
